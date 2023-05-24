@@ -59,3 +59,8 @@ def delete_task(task_id):
         return jsonify({'message': 'Task not found'}), 404
     task.delete(task_id)
     return jsonify({'message': 'Task deleted'}), 200
+
+# @tasks_bp.route('/', methods=['DELETE'], strict_slashes=False)
+# def delete_all_tasks():
+#     Task.delete_all()
+#     return jsonify({'message': 'All tasks deleted'}), 200

@@ -68,6 +68,11 @@ class Task:
         task_collection.update_one({'_id': ObjectId(task_id)},
                                    {'$set': updated_task})
 
+    # @staticmethod
+    # def delete_all():
+    #     '''Delete all tasks'''
+    #     task_collection.delete_many()
+
     @staticmethod
     def delete(task_id):
         """Deletes a task by id"""
